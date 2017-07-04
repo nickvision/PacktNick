@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Learning C++ by Creating Games with UE4 - Chapter 3. Looping</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/real2.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+    <link href="css/bootstrap-xl.css" rel="stylesheet">
+
+    <!-- Prism -->
+    <link rel="stylesheet" href="css/prism.css">
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat|Lato:400,500,700' rel='stylesheet' type='text/css'>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="language-markup">
+
+  
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+          <ul class="sidebar-nav">
+            <div class="list-group" id="sidebar-nav" role="tablist" aria-multiselectable="true">
+              <li><a href="#" class="sidenav-menu-holder back-btn"> <span class="sidenav-menu">Back</span> <span class="pull-left mr5"><i class="fa fa-chevron-left"></i></span> </a></li>
+              <li><a href="front-page.html" class="sidenav-menu-holder"><span class="sidenav-menu"><img src="images/cover.png" class="cover-image"></span><span class="pull-left mr5"></a>    </li>
+
+              <li class="search-form">
+              <form class="col-sm-12 mb15 pl25 pr25">
+                <input type="text" class="form-control" placeholder="&#xf002;  Search this course...">
+              </form>
+            </li>
+              <div class="clearfix"></div>
+              <li><a href="#" class="sidenav-menu-holder"><div class="section-name"><i class="fa fa-bookmark mr5"></i> Bookmarks (2)</div></a>    </li>
+              <li class=""><a href="#" class="sidenav-menu-holder"><div class="section-name">Preface</div></a> </li>
+              <li class="active"><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="sidenav-menu-holder"><div class="section-name">1. Getting Started</div></a>    </li>
+              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <li class="sub-nav active"><a href="#"><div class="section-complete"><i class="fa fa-check"></i></div>
+                            <div class="section-name">Chapter 1. Getting Started</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-complete"><i class="fa fa-check"></i></div>
+                            <div class="section-name">Adding App Modules</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-complete"><i class="fa fa-check"></i></div>
+                            <div class="section-name">The app controller</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-complete"><i class="fa fa-check"></i></div>
+                            <div class="section-name">Adding the next exercise in tandem with everything</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-complete"><i class="fa fa-check"></i></div>
+                            <div class="section-name">Understanding responsive design priciples</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">103m</div><div class="section-name">Migrating to Angular 2</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">1m</div><div class="section-name">Summary</div></a></li>
+              </div>
+              <li class=""><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" class="sidenav-menu-holder"><div class="section-name">2. Building our first application</div></a>    </li>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <li class="sub-nav active"><a href="#"><div class="section-time">3m</div>
+                            <div class="section-name">Chapter 2. Getting Started</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">15m</div>
+                            <div class="section-name">Adding App Modules</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">22m</div>
+                            <div class="section-name">The app controller</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">1m</div>
+                            <div class="section-name">Adding the next exercise in tandem with everything</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">18m</div>
+                            <div class="section-name">Understanding responsive design priciples</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">103m</div><div class="section-name">Migrating to Angular 2</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">1m</div><div class="section-name">Summary</div></a></li>
+              </div>
+              <li class=""><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree" class="sidenav-menu-holder"><div class="section-name">3. More AngularJS Goodness</div></a>    </li>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <li class="sub-nav active"><a href="#"><div class="section-time">3m</div>
+                            <div class="section-name">Chapter 2. Getting Started</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">15m</div>
+                            <div class="section-name">Adding App Modules</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">22m</div>
+                            <div class="section-name">The app controller</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">1m</div>
+                            <div class="section-name">Adding the next exercise in tandem with everything</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">18m</div>
+                            <div class="section-name">Understanding responsive design priciples</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">103m</div><div class="section-name">Migrating to Angular 2</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">1m</div><div class="section-name">Summary</div></a></li>
+              </div>
+              <li class=""><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour" class="sidenav-menu-holder"><div class="section-name">4. Building Personal Trainer</div></a>    </li>
+              <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <li class="sub-nav active"><a href="#"><div class="section-time">3m</div>
+                            <div class="section-name">Chapter 2. Getting Started</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">15m</div>
+                            <div class="section-name">Adding App Modules</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">22m</div>
+                            <div class="section-name">The app controller</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">1m</div>
+                            <div class="section-name">Adding the next exercise in tandem with everything</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">18m</div>
+                            <div class="section-name">Understanding responsive design priciples</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">103m</div><div class="section-name">Migrating to Angular 2</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">1m</div><div class="section-name">Summary</div></a></li>
+              </div>
+              <li class=""><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive" class="sidenav-menu-holder"><div class="section-name">5. Adding Data Persistance and other </div></a>    </li>
+              <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <li class="sub-nav active"><a href="#"><div class="section-time">3m</div>
+                            <div class="section-name">Chapter 2. Getting Started</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">15m</div>
+                            <div class="section-name">Adding App Modules</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">22m</div>
+                            <div class="section-name">The app controller</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">1m</div>
+                            <div class="section-name">Adding the next exercise in tandem with everything</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">18m</div>
+                            <div class="section-name">Understanding responsive design priciples</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">103m</div><div class="section-name">Migrating to Angular 2</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">1m</div><div class="section-name">Summary</div></a></li>
+              </div>
+              <li class=""><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix" class="sidenav-menu-holder"><div class="section-name">6. Working with Directives</div></a>    </li>
+              <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <li class="sub-nav active"><a href="#"><div class="section-time">3m</div>
+                            <div class="section-name">Chapter 2. Getting Started</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">15m</div>
+                            <div class="section-name">Adding App Modules</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">22m</div>
+                            <div class="section-name">The app controller</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">1m</div>
+                            <div class="section-name">Adding the next exercise in tandem with everything</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">18m</div>
+                            <div class="section-name">Understanding responsive design priciples</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">103m</div><div class="section-name">Migrating to Angular 2</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">1m</div><div class="section-name">Summary</div></a></li>
+              </div>
+              <li class=""><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven" class="sidenav-menu-holder"><div class="section-name">7. Testing the AngularJS Application</div></a>    </li>
+              <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <li class="sub-nav active"><a href="#"><div class="section-time">3m</div>
+                            <div class="section-name">Chapter 2. Getting Started</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">15m</div>
+                            <div class="section-name">Adding App Modules</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">22m</div>
+                            <div class="section-name">The app controller</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">1m</div>
+                            <div class="section-name">Adding the next exercise in tandem with everything</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">18m</div>
+                            <div class="section-name">Understanding responsive design priciples</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">103m</div><div class="section-name">Migrating to Angular 2</div></a></li>
+                        <li class="sub-nav"><a href="#"><div class="section-time">1m</div><div class="section-name">Summary</div></a></li>
+              </div>
+              <li class=""><a href="#" class="sidenav-menu-holder"><div class="section-name">Appendix A:Index</div></a> </li>
+            </div>
+          </ul>
+        </div>
+
+        <!-- /#sidebar-wrapper -->
+
+        <div id="page-content-wrapper" class="book-page ng-scope">
+            <a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars fa-2x mr5"></i></a>
+                <div id="book-wrapper" onload="finishLoad()" ng-include="" src="views.book" class="ng-scope container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 mt10">
+                        
+                    </div>
+                </div>  
+                            
+                <div class=" col-sm-12 col-xl-offset-2 col-xl-8 col-lg-offset-1 col-lg-10">
+                <div class="btn-group pull-right mt15 mb30" role="group">
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                                <i class="fa fa-shopping-cart fa-lg"></i>
+                                <span class="hidden-xs hidden-sm ml5"> Buy eBook for $21.99</span>
+                                <span class="hidden-xs hidden-sm caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="big-data-and-business-intelligence/python-machine-learning" target="_self">Buy from Store</a>
+                                </li>
+                                <li>
+                                    <a href="#" data-toggle="modal" data-target="#claimModal">Claim using Token</a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li class="disabled">
+                                    <a href="#">You have <strong>3</strong> Token(s) Remaining</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-default">
+                                <i class="fa fa-folder-open-o fa-lg"></i>
+                                <span class="hidden-xs ml5">Save for Later</span></button>
+                        <button class="btn btn-default hidden-xs">
+                        <i class="fa fa-file fa-lg"></i>
+                        <span class="hidden-xs hidden-sm ml5">Code Files</span></button>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-share fa-lg no-text-padding"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="disabled"><a href="#" class="disabled text-center"><b>Share</b></a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#" ng-click="facebookShare();">Facebook</a></li>
+                                <li><a href="mailto:?Subject=Packt Book: Python Machine Learning&amp;body=Packt Book link: https://www.packtpub.com/packtlib/book/Big-Data-and-Business-Intelligence/9781783555130" target="_top" ng-click="emailShare();">Email</a></li>
+                                <li><a href="#" ng-click="twitterShare();">Twitter</a></li>
+                                <li><a href="#" ng-click="redditShare();">Reddit</a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="clearfix"></div>              
+                    
+                    <h2>AngularJS by Example</h2>
+                    <hr>
+                    
+                    <div class="row">
+
+                    <div class="col-sm-12">
+                        <h5 class="mt0">By Ben Frain</h5>
+                        
+                        <div class="">
+                                
+
+                            <p class="mb20"><b>Learn the hot new front-end web framework from Facebook: ReactJS, an easy way of developing the V in MVC and a better approach to software engineering in functional JavaScript</b></p>
+                            <a href="index.html" class="btn btn-info btn-lg pull-right hidden-xs">Resume Learning <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
+                            <a href="index.html" class="btn btn-info btn-lg btn-block mt20 mb20 visible-xs">Resume Learning <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
+                            <div class="clearfix"></div>
+
+                            <div class="col-sm-12">
+                                
+                                <ul id="myTabs" class="nav nav-tabs nav-justified hidden-xs mt20" role="tablist">
+                                    <li class="active">
+                                        <a href="#about" role="tab" id="about-tab" data-toggle="tab" aria-controls="about" ng-click="$event.preventDefault();" aria-expanded="true"><h5>Info</h5></a>
+                                    </li>
+                                    <li>
+                                        <a href="#learn" role="tab" id="learn-tab" data-toggle="tab" aria-controls="learn" ng-click="$event.preventDefault();" aria-expanded="false"><h5>Contents</h5></a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#author" role="tab" id="author-tab" data-toggle="tab" aria-controls="author" ng-click="$event.preventDefault();" aria-expanded="false"><h5>Author</h5></a>
+                                    </li>
+                                </ul>
+                                <ul id="myTabs" class="nav nav-pills text-center nav-stacked visible-xs mb60" role="tablist">
+                                    <li class="active">
+                                        <a href="#about" role="tab" id="about-tab" data-toggle="tab" aria-controls="about" ng-click="$event.preventDefault();" aria-expanded="true">Info</a>
+                                    </li>
+                                    <li>
+                                        <a href="#learn" role="tab" id="learn-tab" data-toggle="tab" aria-controls="learn" ng-click="$event.preventDefault();" aria-expanded="false">Contents</a>
+                                    </li>
+                                    <li>
+                                        <a href="#author" role="tab" id="author-tab" data-toggle="tab" aria-controls="author" ng-click="$event.preventDefault();" aria-expanded="false">Author</a>
+                                    </li>
+                                </ul>
+
+                                <div id="myTabContent" class="tab-content pt30">
+                                    
+                                    <div role="tabpanel" class="tab-pane fade in active" id="about" aria-labelledby="about-tab">
+                                       
+                                        <div class="">
+                                            <div class="visible-xs">
+                                                <h4 class="mobile-title">Course Features</h4>
+                                                <hr>
+                                            </div>
+                                            <div ng-bind-html="book_data.learn" class="ng-binding">
+                                        <h5>Features</h6>
+                                        <hr>
+                                        <ul class="mb30">
+                                                <li>Harness the ability to build algorithms for unsupervised data using deep learning concepts with R</li>
+                                                <li>Master the common problems faced such as overfitting of data, anomalous datasets, image recognition, and performance tuning while building the models</li>
+                                                <li>Build models relating to neural networks, prediction and deep prediction</li>
+                                                </ul>
+                                        <h5>Learning</h6>
+                                            <hr>
+                                            <ul class="mb30">
+                                        <li>Set up the R package H2O to train deep learning models</li>
+                                        <li>Understand the core concepts behind deep learning models</li>
+                                        <li>Use Autoencoders to identify anomalous data or outliers</li>
+                                        <li>Predict or classify data automatically using deep neural networks</li>
+                                        <li>Build generalizable models using regularization to avoid overfitting the training data</li>
+                                        </ul></div>
+                                        <h5>About</h6>
+                                            <hr>
+                                        <div ng-bind-html="book_data.detail" class="ng-binding mb30"><p>Deep learning is a branch of machine learning based on a set of algorithms that attempt to model high-level abstractions in data by using model architectures. With the superb memory management and the full integration with multi-node big data platforms, the H2O engine has become more and more popular among data scientists in the field of deep learning.</p>
+                                        <p>This book will introduce you to the deep learning package H2O with R and help you understand the concepts of deep learning. We will start by setting up important deep learning packages available in R and then move towards building models related to neural networks, prediction, and deep prediction, all of this with the help of real-life examples.</p>
+                                        <p>After installing the H2O package, you will learn about prediction algorithms. Moving ahead, concepts such as overfitting data, anomalous data, and deep prediction models are explained. Finally, the book will cover concepts relating to tuning and optimizing models.</p></div>
+                                            
+                                            </div>
+                                        </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="learn" aria-labelledby="learn-tab">
+                                        <div class="visible-xs">
+                                            <h4 class="mobile-title">Contents</h4>
+                                            <hr>
+                                        </div>
+                                        <div ng-bind-html="book_data.toc" class="ng-binding">
+                                                <ul class="">
+                                                    <li class=""><a href="#">Preface </a> (3m)</li>
+                                                    <li><a href="index.html">1. Getting Started</a></li>
+                                                        <ul>
+                                                            <li><a href="index.html">Adding App Modules</a> (31m)</li>
+                                                            <li> <a href="index.html">The app controller</a> (22m)</li>
+                                                            <li><a href="index.html">Adding the next exercise in tandem with everything</a>  (9m)</li>
+                                                            <li><a href="index.html">Understanding responsive design priciples</a>  (2m)</li>
+                                                            <li><a href="index.html">Migrating to Angular 2</a>  (8m)</li>
+                                                            <li><a href="index.html">Summary</a>  (19m)</li>
+                                                        </ul>
+                                                    <li><a href="#">2. Learning about x and y</a></li>
+                                                        <ul>
+                                                            <li><a href="index.html">Adding App Modules</a> (31m)</li>
+                                                            <li> <a href="index.html">The app controller</a> (22m)</li>
+                                                            <li><a href="index.html">Adding the next exercise in tandem with everything</a>  (9m)</li>
+                                                            <li><a href="index.html">Understanding responsive design priciples</a>  (2m)</li>
+                                                            <li><a href="index.html">Migrating to Angular 2</a>  (8m)</li>
+                                                            <li><a href="index.html">Summary</a>  (19m)</li>
+                                                        </ul>
+                                                    <li><a href="index.html">3. More AngularJS Goodness</a></li>
+                                                        <ul>
+                                                            <li><a href="index.html">Adding App Modules</a> (31m)</li>
+                                                            <li> <a href="index.html">The app controller</a> (22m)</li>
+                                                            <li><a href="index.html">Adding the next exercise in tandem with everything</a>  (9m)</li>
+                                                            <li><a href="index.html">Understanding responsive design priciples</a>  (2m)</li>
+                                                            <li><a href="index.html">Migrating to Angular 2</a>  (8m)</li>
+                                                            <li><a href="index.html">Summary</a>  (19m)</li>
+                                                        </ul>
+                                                    <li><a href="#">4. Building Personal Trainer</a></li>
+                                                        <ul>
+                                                            <li><a href="index.html">Adding App Modules</a> (31m)</li>
+                                                            <li> <a href="index.html">The app controller</a> (22m)</li>
+                                                            <li><a href="index.html">Adding the next exercise in tandem with everything</a>  (9m)</li>
+                                                            <li><a href="index.html">Understanding responsive design priciples</a>  (2m)</li>
+                                                            <li><a href="index.html">Migrating to Angular 2</a>  (8m)</li>
+                                                            <li><a href="index.html">Summary</a>  (19m)</li>
+                                                        </ul>
+                                                    <li><a href="index.html">5. Adding Data Persistance and other</a></li>
+                                                        <ul>
+                                                            <li><a href="index.html">Adding App Modules</a> (31m)</li>
+                                                            <li> <a href="index.html">The app controller</a> (22m)</li>
+                                                            <li><a href="index.html">Adding the next exercise in tandem with everything</a>  (9m)</li>
+                                                            <li><a href="index.html">Understanding responsive design priciples</a>  (2m)</li>
+                                                            <li><a href="index.html">Migrating to Angular 2</a>  (8m)</li>
+                                                            <li><a href="index.html">Summary</a>  (19m)</li>
+                                                        </ul>
+                                                    <li><a href="#">6. Working with Directives</a></li>
+                                                        <ul>
+                                                            <li><a href="index.html">Adding App Modules</a> (31m)</li>
+                                                            <li> <a href="index.html">The app controller</a> (22m)</li>
+                                                            <li><a href="index.html">Adding the next exercise in tandem with everything</a>  (9m)</li>
+                                                            <li><a href="index.html">Understanding responsive design priciples</a>  (2m)</li>
+                                                            <li><a href="index.html">Migrating to Angular 2</a>  (8m)</li>
+                                                            <li><a href="index.html">Summary</a>  (19m)</li>
+                                                        </ul>
+                                                    <li><a href="#">7. Testing the AngularJS Application</a></li>
+                                                        <ul>
+                                                            <li><a href="index.html">Adding App Modules</a> (31m)</li>
+                                                            <li> <a href="index.html">The app controller</a> (22m)</li>
+                                                            <li><a href="index.html">Adding the next exercise in tandem with everything</a>  (9m)</li>
+                                                            <li><a href="index.html">Understanding responsive design priciples</a>  (2m)</li>
+                                                            <li><a href="index.html">Migrating to Angular 2</a>  (8m)</li>
+                                                            <li><a href="index.html">Summary</a>  (19m)</li>
+                                                        </ul>
+                
+                                                    </ul>
+                                        </div>
+                                        
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="author" aria-labelledby="author-tab">
+                                        <div class="visible-xs">
+                                            <h4 class="mobile-title">About the Author</h4>
+                                            <hr>
+                                        </div>
+                                        <p><strong class="ng-binding">Dr. Joshua F. Wiley</strong></p>
+                                        <div ng-bind-html="book_data.author_description" class="ng-binding"><p>Dr. Joshua F. Wiley is a lecturer at Monash University and a senior partner at Elkhart Group Limited, a statistical consultancy. He earned his PhD from the University of California, Los Angeles. His research focuses on using advanced quantitative methods to understand the complex interplays of psychological, social, and physiological processes in relation to psychological and physical health. In statistics and data science, Joshua focuses on biostatistics and is interested in reproducible research and graphical displays of data and statistical models. Through consulting at Elkhart Group Limited and his former work at the UCLA Statistical Consulting Group, Joshua has helped a wide array of clients, ranging from experienced researchers to biotechnology companies. He develops or codevelops a number of R packages including varian, a package to conduct Bayesian scale-location structural equation models, and MplusAutomation, a popular package that links R to the commercial Mplus software.</p></div>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                                
+                                <div class="text-center col-sm-12 mb35 mt40">
+                                    <div id="disqus_thread"></div>
+                                        <script>
+
+                                        /**
+                                         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                                         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
+                                        /*
+                                        var disqus_config = function () {
+                                            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                                            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                                        };
+                                        */
+                                        (function() { // DON'T EDIT BELOW THIS LINE
+                                            var d = document, s = d.createElement('script');
+                                            s.src = '//mapt-online.disqus.com/embed.js';
+                                            s.setAttribute('data-timestamp', +new Date());
+                                            (d.head || d.body).appendChild(s);
+                                        })();
+                                        </script>
+                                        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                                                            
+                                    <hr>
+                                    <small class="ng-binding">ISBN 9781785280580 © Packt Publishing Limited. All Rights Reserved </small>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- JAVASCRIPT BLOCKS -->
+
+    <!-- jQuery Script-->
+    <script src="js/jquery.js"></script>
+    <!-- Syntax Highlighting Script -->
+    <script src="js/prism.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Sidebar Toggle Script -->
+    <script src="js/simple-sidebar.js"></script>
+    <script src="js/sidenav-accordion.js"></script>
+    <script id="dsq-count-scr" src="//mapt-online.disqus.com/count.js" async></script>
+</body>
+
+</html>

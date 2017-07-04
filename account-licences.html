@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+    <link rel="apple-touch-icon" sizes="57x57" href="/packtlib-nv/images/apple-icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/packtlib-nv/images/apple-icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/packtlib-nv/images/apple-icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/packtlib-nv/images/apple-icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/packtlib-nv/images/apple-icons/apple-icon-180x180.png">
+
+    <title>Mapt - Developer Skills Delivered</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+    <link href="css/bootstrap-xl.css" rel="stylesheet">
+
+
+    <!-- Select2 -->
+    <!-- jQuery Script-->
+    <script src="js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+    <link href="css/select2.css" rel="stylesheet" />
+
+    <!-- Devicons -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+
+    <!-- Prism -->
+    <link rel="stylesheet" href="css/prism.css">
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat|Lato:400,500,700' rel='stylesheet' type='text/css'>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="language-markup">
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4>Upload .CSV</h4>
+      </div>
+      <div class="modal-body">
+              <p>Please make sure that when saving the CSV for uploads, Save As -> Windows Comma Seperated CSV. The format for the CSV is as follows:</p>
+              <p>email address , first name , last name</p>
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputFile">Upload file:</label>
+                  <input type="file" id="exampleInputFile">
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Notify Users via Email
+                  </label>
+                </div>
+              </form>
+      </div>
+
+      <div class="modal-footer">
+        <button ref="#" type="button" class="btn btn-primary">Upload .CSV</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+          <ul class="sidebar-nav">
+            <div class="list-group" id="sidebar-nav" role="tablist" aria-multiselectable="true">
+              <li class="nav-logo "><a href="dashboard.html" class="sidenav-menu-holder"><span class="sidenav-menu"><img src="images/logo.png" height="30px" class=""></span><span class="pull-left mr5"></span></a>    </li>
+              <form class="col-sm-12 mb15 pl25 pr35">
+                <input type="text" class="form-control mb10" placeholder="&#xf002;  Search all courses...">
+              </form>
+              <div class="clearfix"></div>
+              <li class=""><a href="dashboard.html" class="sidenav-menu-holder"><span class="sidenav-menu">Dashboard</span><span class="pull-left mr5"></span></a>    </li>
+              <li class="active"><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseEight" aria-expanded="true" aria-controls="collapseEight" class="sidenav-menu-holder"><span class="sidenav-menu">ACME INC.</span><span class="pull-left mr5"></span></a>    </li>
+              <div id="collapseEight" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="collapseEight">
+                <li class="sub-nav"><a href="dashboard-team.html" class="sidenav-menu-holder"><span class="sidenav-menu">Overview</span></a>    </li>
+                <li class="sub-nav "><a href="users.html" class="sidenav-menu-holder"><span class="sidenav-menu">Users </span></a>    </li>
+                <li class="sub-nav "><a href="teams.html" class="sidenav-menu-holder"><span class="sidenav-menu">Teams </span></a>    </li>
+                <li class="sub-nav active"><a href="account-licences.html" class="sidenav-menu-holder"><span class="sidenav-menu">Account </span></a>    </li>
+              </div>
+              <li class=""><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="sidenav-menu-holder"><span class="sidenav-menu">Skills</span><span class="pull-left mr5"></span></a>    </li>
+              <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <li class="sub-nav"><a href="roles.html" class="sidenav-menu-holder"><span class="sidenav-menu">Skill Plans </span></a>    </li>
+                <li class="sub-nav"><a href="all-skillcards.html" class="sidenav-menu-holder"><span class="sidenav-menu">Skill Cards </span><span class="pull-left mr5">6</span></a>    </li>
+                <li class="sub-nav"><a href="usage.html" class="sidenav-menu-holder"><span class="sidenav-menu">Progress</span><span class="pull-left mr5"></span></a>    </li>
+                
+              </div>
+              <li class=""><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" class="sidenav-menu-holder"><span class="sidenav-menu">Library</span><span class="pull-left mr5"></span></a>    </li>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <li class="sub-nav "><a href="library.html" class="sidenav-menu-holder"><span class="sidenav-menu">Search</span><span class="pull-left mr5"></span></a>    </li>
+                <li class="sub-nav"><a href="my-library.html" class="sidenav-menu-holder"><span class="sidenav-menu">My Library</span></a>    </li>
+                <li class="sub-nav"><a href="history.html" class="sidenav-menu-holder"><span class="sidenav-menu">History</span></a>    </li>
+                <li class="sub-nav"><a href="trending.html" class="sidenav-menu-holder"><span class="sidenav-menu">Trending</span></a>    </li>
+              </div>
+              <li class=""><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour" class="sidenav-menu-holder"><span class="sidenav-menu">Help</span><span class="pull-left mr5"></span></a>    </li>
+              <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <li class="sub-nav"><a href="help.html" class="sidenav-menu-holder"><span class="sidenav-menu">FAQs</span><span class="pull-left mr5"></span></a></li>
+              </div>
+              <li class=""><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree" class="sidenav-menu-holder"><span class="sidenav-menu">Account</span><span class="pull-left mr5"></span></a>    </li>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <li class="sub-nav "><a href="account-details.html" class="sidenav-menu-holder"><span class="sidenav-menu">Account Details</span><span class="pull-left mr5"></span></a>    </li>
+                <li class="sub-nav "><a href="account-subscription.html" class="sidenav-menu-holder"><span class="sidenav-menu">Subscriptions</span><span class="pull-left mr5"></span></a>    </li>
+                <li class="sub-nav"><a href="account-licences.html" class="sidenav-menu-holder"><span class="sidenav-menu">Logout </span></a>    </li>
+              </div>
+              <li class="">
+                <a href="https://www.packtpub.com" class="sidenav-menu-holder"><span class="sidenav-menu logo-text">Powered by <img src="images/packt-orange.png" target="_blank" class="packt-logo"></span><span class="pull-left mr5"></span></a></li>
+            </div>
+           
+          </ul>
+
+        </div>
+        
+
+        <!-- /#sidebar-wrapper -->
+
+        <div id="page-content-wrapper" class="">
+        <a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars fa-2x mr5"></i></a>
+            <div id="book-wrapper" class="container-fluid">               
+                <div class="row">
+                  <div class="col-sm-12 col-lg-offset-1 col-lg-10 mt10">
+                    <div class="page-title"> 
+                      <h3>Account</h3>
+                      <h6 class="mt5">From here you can manage the account for Acme Inc.</h6>
+                    </div>
+                    <hr>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h6 class="mt5 mb5">Invite Users<span class="pull-right"><b>10</b> License(s) remaining </span></h6>
+                      </div>
+                      <div class="panel-body">
+                        <form class="form-horizontal">
+                          <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 control-label">Enter Email Address:</label>
+                            <div class="col-sm-4">
+                              <input type="email" class="form-control" value="" placeholder="Email Address">
+                            </div>
+                            <div class="col-sm-2">
+                              <a href="#" class="btn btn-primary"><i class="fa fa-user-plus mr5"></i> Invite User</a>
+                            </div>
+                            <div class="col-sm-2">
+                              <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-info"><i class="fa fa-upload mr5"></i> Upload .CSV</a>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h6 class="mt5 mb5">Account Details</h6>
+                      </div>
+                      <div class="panel-body">
+                        <form class="form-horizontal">
+                          <div class="form-group">
+                            <label class="col-sm-3 control-label">Company Name:</label>
+                            <div class="col-sm-9">
+                              <input type="name" class="form-control" value="Acme Inc." placeholder="Enter your Company Name">
+                            </div>
+                           
+                          </div>
+                          <div class="form-group">
+                            <label class="col-sm-3 control-label">Admins:</label>
+                            <div class="col-sm-9">
+                              <select class="admin-select form-control" multiple="multiple">
+                                <option selected>Oli Huggins</option>
+                                <option selected>Nick Falkowski</option>
+                                <option selected>Ed Gordon</option>
+                                <option>Julian Ursell</option>
+                                <option>Kerry George</option>
+                                <option>Akram Hussain</option>
+                                <option>Greg Roberts</option>
+                                <option>Erol Staveley</option>
+                              </select>
+                               <a href="#" class="btn btn-primary mt15 pull-right">Save Changes</a>
+                            </div>
+                           
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                          
+
+                  </div><!-- row -->
+      </div><!-- /#book-wrapper -->
+    </div><!-- /#page-content-wrapper -->
+  </div><!-- /#wrapper -->
+    
+
+    <!-- JAVASCRIPT BLOCKS -->
+
+    <script src="js/prism.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Sidebar Toggle Script -->
+    <script src="js/simple-sidebar.js"></script>
+    <script src="js/sidenav-accordion.js"></script>
+    <script type="text/javascript">
+      $(".admin-select").select2({ 
+      placeholder: "Select Team Members"
+    });
+
+    </script>
+
+    <script type="text/javascript">
+    $("#myButton").click(function() {
+         $("#myDiv").fadeTo("slow", 0.01, function(){ //fade
+             $(this).slideUp("slow", function() { //slide up
+                 $(this).remove(); //then remove from the DOM
+                });
+             });
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+{
+    "me": {
+        "plan": {
+            "title": "Python Developer"
+            , "avatar": "images/avatar4.jpg"
+            , "cards": [
+                {
+                    "title": "Python Fundamentals"
+                    , "topic": "Python"
+                    , "icon": "devicon-python-plain"
+                    , "desc": "Python is one of the easiest languages to get started with. It has a human readable syntax, and a fully-featured (“batteries included”) standard library to help you get things done right away. It is your portal into a new world of productive development."
+                    , "books": [6, 9, 10]
+            }
+            , {
+                    "title": "Object-Oriented Python Programming"
+                    , "topic": "Python"
+                    , "icon": "devicon-python-plain"
+                    , "desc": "Object-oriented programming is a powerful design paradigm that allows you to manipulate data and behavior together by creating objects. Understanding how to write object-oriented code is an important part of Python programming, as it allows you to stop writing simple scripts and start creating more complex programs."
+                    , "books": [7, 8]
+                    , "completed": "true"
+            }
+            , {
+                    "title": "Functional Python Programming"
+                    , "topic": "Python"
+                    , "icon": "devicon-python-plain"
+                    , "desc": "Python is one of the easiest languages to get started with. It has a human readable syntax, and a fully-featured (“batteries included”) standard library to help you get things done right away. It is your portal into a new world of productive development."
+                    , "books": [9, 1]
+            }
+            , {
+                    "title": "Python High Performance Programming"
+                    , "topic": "Python"
+                    , "icon": "devicon-python-plain"
+                    , "desc": "Python is one of the easiest languages to get started with. It has a human readable syntax, and a fully-featured (“batteries included”) standard library to help you get things done right away. It is your portal into a new world of productive development."
+                    , "books": [0]
+            }
+            , {
+                    "title": "Testing Python"
+                    , "topic": "Python"
+                    , "icon": "devicon-python-plain"
+                    , "desc": "Testing is vital to the smooth running of any application. Python code is no different. Creating test-driven applications puts testing at the heart of your development process, making sure your applications are ready to deploy more efficiently."
+                    , "books": [10]
+            }
+            , {
+                    "title": "Django Basics"
+                    , "topic": "Django"
+                    , "icon": "devicon-django-plain"
+                    , "desc": "Django adopts the same “batteries included” philosophy as Python, and has options straight out of the box for all major web development aspects such as authentication, routing, and templating, as well as database schema migrations. It is the best choice for the productive Python programmer to make professional web applications."
+                    , "books": [11]
+            }
+                , {
+                    "title": "Python Fundamentals"
+                    , "topic": "Python"
+                    , "icon": "devicon-python-plain"
+                    , "desc": "Python is one of the easiest languages to get started with. It has a human readable syntax, and a fully-featured (“batteries included”) standard library to help you get things done right away. It is your portal into a new world of productive development."
+                    , "books": [6, 9, 10]
+            }
+            , {
+                    "title": "Object-Oriented Python Programming"
+                    , "topic": "Python"
+                    , "icon": "devicon-python-plain"
+                    , "desc": "Object-oriented programming is a powerful design paradigm that allows you to manipulate data and behavior together by creating objects. Understanding how to write object-oriented code is an important part of Python programming, as it allows you to stop writing simple scripts and start creating more complex programs."
+                    , "books": [7, 8]
+                    , "completed": "true"
+            }
+            , {
+                    "title": "Functional Python Programming"
+                    , "topic": "Python"
+                    , "icon": "devicon-python-plain"
+                    , "desc": "Python is one of the easiest languages to get started with. It has a human readable syntax, and a fully-featured (“batteries included”) standard library to help you get things done right away. It is your portal into a new world of productive development."
+                    , "books": [9, 1]
+            }
+            , {
+                    "title": "Python High Performance Programming"
+                    , "topic": "Python"
+                    , "icon": "devicon-python-plain"
+                    , "desc": "Python is one of the easiest languages to get started with. It has a human readable syntax, and a fully-featured (“batteries included”) standard library to help you get things done right away. It is your portal into a new world of productive development."
+                    , "books": [0]
+            }
+            , {
+                    "title": "Testing Python"
+                    , "topic": "Python"
+                    , "icon": "devicon-python-plain"
+                    , "desc": "Testing is vital to the smooth running of any application. Python code is no different. Creating test-driven applications puts testing at the heart of your development process, making sure your applications are ready to deploy more efficiently."
+                    , "books": [10]
+            }
+            , {
+                    "title": "Django Basics"
+                    , "topic": "Django"
+                    , "icon": "devicon-django-plain"
+                    , "desc": "Django adopts the same “batteries included” philosophy as Python, and has options straight out of the box for all major web development aspects such as authentication, routing, and templating, as well as database schema migrations. It is the best choice for the productive Python programmer to make professional web applications."
+                    , "books": [11]
+                    , "completed": "true"
+            }
+                , {
+                    "title": "Data Analysis with Python"
+                    , "topic": "Data Science"
+                    , "icon": "devicon-python-plain"
+                    , "desc": "Gaining insight from your data is one of the most important tasks for any Python developer. There will never be a scenario or situation you find yourself in when it’s not useful to make data-driven decisions in the interests or your clients or users. From web developers to machine learning engineers, you can achieve a lot with some simple data analysis skills."
+                    , "books": [4, 0]
+            }
+        ]
+        }
+    }
+    , "books": [{
+            "id": 0
+            , "title": "Practical Data Science Cookbook"
+            , "cover": "images/book1.jpg"
+            , "progress": "20%"
+            , "lastRead": "2016-04-01"
+            , "addedDate": "2015-01-01"
+            , "popular": 11
+        }
+        , {
+            "id": 1
+            , "title": "UX Design for Web Developers"
+            , "cover": "images/book2.jpg"
+            , "progress": "98%"
+            , "lastRead": "2016-04-01"
+            , "addedDate": "2015-05-01"
+            , "popular": 45
+        }
+        , {
+            "id": 2
+            , "title": "Practical Machine Learning"
+            , "cover": "images/book3.jpg"
+            , "addedDate": "2015-03-01"
+            , "popular": 78
+        }
+        , {
+            "id": 3
+            , "title": "Python Data Essentials"
+            , "cover": "images/book4.jpg"
+            , "progress": "20%"
+            , "lastRead": "2016-04-01"
+            , "addedDate": "2016-01-01"
+            , "popular": 64
+        }
+        , {
+            "id": 4
+            , "title": "Clean Data"
+            , "cover": "images/book5.jpg"
+            , "progress": "6%"
+            , "lastRead": "2016-04-01"
+            , "addedDate": "2015-10-01"
+            , "popular": 12
+        }
+        , {
+            "id": 5
+            , "title": "Unity 5 Game Optimization"
+            , "cover": "images/book6.jpg"
+            , "lastRead": "2016-04-01"
+            , "addedDate": "2015-11-01"
+            , "popular": 32
+        }
+        , {
+            "id": 6
+            , "title": "Learning Python"
+            , "cover": "images/book7.png"
+            , "progress": "76%"
+            , "lastRead": "2016-04-01"
+            , "addedDate": "2015-03-21"
+            , "popular": 98
+        }
+        , {
+            "id": 7
+            , "title": "Python 3 Object-Orientated Programming"
+            , "cover": "images/book8.png"
+            , "lastRead": "2016-04-01"
+            , "addedDate": "2015-02-11"
+            , "popular": 45
+            , "progress": "100%"
+        }
+        , {
+            "id": 8
+            , "title": "Mastering Object-Oriented Python"
+            , "cover": "images/book9.png"
+            , "addedDate": "2015-06-05"
+            , "popular": 16
+            , "progress": "100%"
+        }
+        , {
+            "id": 9
+            , "title": "Functional Python Programming"
+            , "cover": "images/book10.png"
+            , "progress": "2%"
+            , "lastRead": "2016-04-01"
+            , "addedDate": "2015-03-08"
+            , "popular": 63
+        }
+        , {
+            "id": 10
+            , "title": "Test-Driven Python Development"
+            , "cover": "images/book11.png"
+            , "addedDate": "2016-01-21"
+            , "popular": 85
+        }
+        , {
+            "id": 11
+            , "title": "Django By Example"
+            , "cover": "images/book12.png"
+            , "addedDate": "2016-07-21"
+            , "popular": 1
+        }
+             ]
+}
